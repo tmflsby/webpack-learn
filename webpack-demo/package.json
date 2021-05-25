@@ -1,0 +1,40 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "test webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack server --config webpack.dev.js"
+  },
+  "author": "tmflsby",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "css-minimizer-webpack-plugin": "^3.0.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-webpack-plugin": "^2.5.4",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "less": "^4.1.1",
+    "less-loader": "^9.0.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss-loader": "^5.3.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

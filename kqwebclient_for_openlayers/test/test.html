@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">-->
+<!--    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>-->
+    <link rel="stylesheet" href="../dist/openlayers-dev/openlayers-dev.css">
+    <script src="../dist/openlayers-dev/openlayers.dev.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #map {
+        height: 600px;
+        width: 800px;
+    }
+</style>
+<body>
+<div id="map"></div>
+<script>
+    console.log(ol)
+    ol.kqMap({
+        target: 'map',
+        view: ol.kqView({
+          center: ol.kqProj.fromLonLat([110.41, 34.82]),
+          zoom: 4
+        }),
+        layers: [
+          ol.kqTileLayer.geoqTileLayer({
+            tileLayerType: 'ChinaOnlineStreetPurplishBlue'
+          })
+        ]
+    })
+</script>
+</body>
+</html>
