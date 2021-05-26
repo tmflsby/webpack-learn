@@ -22,3 +22,10 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+## 查看配置项
+
+`vue inspect --mode=development > webpack.dev.js`
+`vue inspect --mode=production > webpack.prod.js`
